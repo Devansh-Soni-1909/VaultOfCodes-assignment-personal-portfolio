@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a>
+                <c:\Users\HP\OneDrive\Pictures\Saved Pictures\Photo.jpeg/li>
+            <li><a href="#skills">Skills & Interests</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Devansh Soni</h1>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="Photo.jpeg" alt="Profile Picture" class="profile-img">
+            <p>
+                Hi, I'm Devansh Soni, a passionate and dedicated individual with a background in computer science and a
+                love for creating innovative solutions. My interests include web development, artificial intelligence,
+                and open-source projects. What makes me unique is my ability to blend creativity with technical
+                expertise, crafting user-friendly applications that solve real-world problems. In my free time, I enjoy
+                reading tech blogs, and experimenting with new programming frameworks.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Development (HTML, CSS, JavaScript)</li>
+                <li>Python Programming</li>
+                <li>Database Management (SQL)</li>
+                <li>Computer Networks</li>
+                <li>c++</li>
+                <li>Frontend Development</li>
+            </ul>
+
+            <h2>Interests</h2>
+            <ul>
+                <li>Artificial Intelligence and Machine Learning</li>
+                <li>UI/UX Design</li>
+                <li>Open-Source Contributions</li>
+                <li>Full stack development</li>
+                <li>Music</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <img src="image1.jpeg" alt="Personal Blog Platform" class="project-img">
+                <div class="project-text">
+                    <h3>Hotel Management System</h3>
+                    <p>
+                        Built an interactive system for managing hotel bookings, customer details, room availability,
+                        and billing. Implemented essential features such as customer check-in/check-out, data entry,
+                        and report generation, all through a user-friendly graphical interface. - Leveraged Tkinter for
+                        the front-end design and Python for backend processing, ensuring smooth data
+                        handling and storage. The project highlights my strong problem-solving skills, attention to
+                        detail, and
+                        ability to create robust, user-focused applications.
+                    </p>
+                    <p><a href="https://github.com/Devansh-Soni-1909/Hotel-Management_System" target="_blank">View
+                            Project</a></p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <img src="image2.jpeg" alt="Task Management App" class="project-img">
+                <div class="project-text">
+                    <h3>Stock Price Prediction</h3>
+                    <p>
+                        Developed and launched StockGpt, a stock price prediction and visualization tool, in
+                        Python, demonstrating proficiency in machine learning, data analysis, and web
+                        development. - Implemented key features, including predictive models (Linear Regression, LSTM),
+                        dynamic
+                        data visualizations, and user-friendly web interfaces using Streamlit. - Showcased strong
+                        analytical skills throughout the development, resulting in a fully functional
+                        tool that provides accurate stock price forecasts and insightful data visualizations.
+                    </p>
+                    <p><a href="https://github.com/Devansh-Soni-1909/Stock_Price_Prediction_and_Visualization" target="_blank">View Project</a></p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <img src="image3.jpeg" alt="E-Commerce Website" class="project-img">
+                <div class="project-text">
+                    <h3>AWS Production Grade VPC Deployment</h3>
+                    <p>
+                        Tables, Security Groups, Network ACLs - Designed a secure, scalable, and highly available AWS
+                        VPC simulating a real-world production
+                        environment. - Deployed Multi-AZ architecture with public/private subnets for fault tolerance
+                        and load distribution. - Configured Auto Scaling Groups with launch templates for dynamic EC2
+                        scaling. - Integrated Application Load Balancer for traffic routing and health checks. - Enabled
+                        internet access for private subnets via NAT Gateway; enforced strict Security Groups and
+                        NACLs. - Built custom route tables for efficient traffic management. - Ensured network
+                        isolation, least privilege access, and cost-efficient scaling.
+                    <p><a href="https://github.com/Devansh-Soni-1909/aws-production-vpc-project" target="_blank">View Project</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:yourname@example.com">devanshsoni1909@gmail.com</a></p>
+            <div class="contact-links">
+                <p><a href="https://www.linkedin.com/in/devansh-soni-545aa8219/" target="_blank"><i
+                            class="fab fa-linkedin"></i>
+                        LinkedIn</a></p>
+                <p><a href="https://github.com/Devansh-Soni-1909" target="_blank"><i class="fab fa-github"></i>
+                        GitHub</a></p>
+            </div>
+        </section>
+    </div>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
